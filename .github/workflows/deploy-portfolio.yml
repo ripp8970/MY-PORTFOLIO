@@ -17,14 +17,6 @@ jobs:
         with:
           node-version: '18'  # Or any version you want to use
 
-      - name: Install dependencies (if needed)
-        run: |
-          npm install #  Include this only if you have a package.json
-
-      - name: Build (if needed)
-        run: |
-          npm run build #  Include this only if you have a build step
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
